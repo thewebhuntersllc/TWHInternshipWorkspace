@@ -36,7 +36,7 @@ const Signup = () => {
         const {
           data: { user },
         } = await supabase.auth.getUser();
-        console.log(user);
+        // console.log(user);
 
         // console.log(user.email, user.id, user.user_metadata.full_name);
 
@@ -51,7 +51,6 @@ const Signup = () => {
       console.log(error);
     }
   };
-
 
   return (
     <div className="container">
@@ -100,7 +99,6 @@ const Signup = () => {
           Already a user?
           <Link to={"/login"}> Login Here</Link>
         </div>
-        
       </Form>
     </div>
   );

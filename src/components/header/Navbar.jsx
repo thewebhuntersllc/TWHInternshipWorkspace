@@ -15,7 +15,7 @@ const Navbar = () => {
   const user = useSelector(
     (state) => state.auth.user
   );
-  console.log(user);
+  // console.log(user);
 
   async function logoutHandler() {
     const { error } = await supabase.auth.signOut();

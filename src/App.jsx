@@ -9,7 +9,7 @@ import { useEffect } from "react";
 function App() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const user = useSelector((state)=>state.auth.user)
+  const user = useSelector((state) => state.auth.user);
 
   async function getUser() {
     const {
@@ -20,7 +20,7 @@ function App() {
     // console.log(user.email, user.id, user.user_metadata.full_name);
 
     if (user) {
-      dispatch(login({user} ));
+      dispatch(login({ user }));
     } else {
       dispatch(logout());
       navigate("/login");
@@ -30,10 +30,7 @@ function App() {
     getUser();
   }, []);
 
-
-// console.log(user)
-
-
+  // console.log(user)
 
   return (
     <div>
