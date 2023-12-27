@@ -1,0 +1,17 @@
+.logoutBtn{
+border: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rigt_content_navbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.link_tag{
+    text-decoration: none;
+    color: white;
+}
